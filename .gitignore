@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Mac / Linux
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Terraform
+.terraform/
+terraform.tfstate*
+
+# Databricks Asset Bundles
+.bundle/
+
+# Logs
+*.log
+
+# Output zips
+*.zip
+
+# Secrets (manual)
+secrets.json
+
+# OS-generated
+Thumbs.db

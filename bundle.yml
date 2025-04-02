@@ -1,0 +1,23 @@
+bundle:
+  name: customer360_pipeline
+
+include:
+  - pipelines/*
+  - sql/*
+  - data/*
+
+targets:
+  dev:
+    mode: development
+    workspace:
+      host: https://<your-databricks-workspace-url>
+    resources:
+      pipelines:
+        customer360:
+          target: dev
+          catalog: main
+          schema: customer360_schema
+          libraries:
+            - notebook: pipelines/dlt_pipeline.py
+          configuration:
+            spark.sql.shuffle.partitions: "2"

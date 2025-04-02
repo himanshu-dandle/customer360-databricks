@@ -1,0 +1,4 @@
+transaction_id,customer_id,amount,transaction_date
+1001,101,200.5,2023-03-01
+1002,102,150.0,2023-03-03
+1003,101,300.0,2023-03-05
